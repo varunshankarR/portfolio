@@ -1,0 +1,361 @@
+*{
+    margin: 0px;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+    transition:5s;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/swan.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.header-text div{
+    margin-top: -10%;
+}
+.headersocial-icons{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    transition: 2s;
+}
+.headersocial-icons i:hover{
+    transform: translate(-10px);
+   color: #ff004f;
+}
+.headerbutton-container button{
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: #ff004f;
+    color: white;
+    margin-top: 30px;
+    transition: 1s
+}
+.headerbutton-container a{
+    color: #fff;
+    text-decoration: none;
+}
+.headerbutton-container button:hover{
+    transform: translate(10px);
+}
+.nav-container{
+    padding: 10px 10%;
+}
+.nav{
+    margin-left: 40%;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* flex-wrap: wrap; */
+}
+#toggle-container{
+    display: none;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+.header-text h1{
+     font-size: 50px;
+     margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f ;
+}
+#About{
+    padding: 80px ;
+     color: #ababab;
+}
+.subtitle{
+    /* margin-top: 20px; */
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-1 img{
+    width: 100%;
+    border-radius: 15px
+}
+.col-2 img{
+    border-radius: 15px;
+}
+.col-2{
+    flex-basis: 45%;
+}
+.col-1{
+    flex-basis: 40%;
+}
+.subtittle{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px; 
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.9s;
+}
+.tab-links:hover::after{
+    width: 70px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0px;
+}
+.tab-contents ul li span{
+    color: #ff004f;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.skill-flex-part{
+    margin-top:6%;
+}
+.skill-flex-part ul img{
+    width: 300px;
+    border-radius: 15px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;
+} 
+/* #flex-img{
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.7;
+} */
+.skills-part{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
+}
+
+.skill-move{
+    margin-left: 50px;
+}
+
+.skills-part div{
+    width: 300px;
+    height:250px;
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius:5px;
+    transition:transform 0.5s; 
+}
+.skills-part div:hover{
+    background-color: #ff004f;
+    transform: translate(-10px);
+}
+.skills-part div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.logo-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+.star-container{
+    color: yellow;
+    margin-top: 20px;
+}
+.button-container button{
+    margin-top: 50px;
+    margin-left: 45%;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    /* border: none; */
+    background-color: #262626;
+    color: #fff;
+    border: #ff004f;
+}
+.button-container button:hover{
+    background-color: #ff004f;
+    color: #fff;
+
+}
+.contact div{
+    margin-top: 30px;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-around;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    opacity: 0.6;
+    margin-right: 25px;
+    font-size: 25px;
+} 
+.social-icons a{
+    text-decoration: none;  
+    font-size: 25px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+
+}
+.contact-right{
+    flex-basis:60%;
+}
+form input, form textarea{
+    width: 90%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn-2{
+    padding: 12px 40px;
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    margin-top: 30px;
+    font-weight: 300;
+}
+/*------------------------------------side navbar------------*/
+
+.sidecontent-container{
+    background-color: #1C232C;
+    width:70%;
+    height: 100%;
+    position: fixed;
+    top:0px;
+    left:-80%;
+    /* display: none; */
+    padding: 20px;
+    color: white;
+    transition:2s;
+}
+.sidecontent-container ul li{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.sidecontent-container a{
+    text-decoration: none;
+    color: #ababab;
+}
+.sidesocail-icons {
+    margin-top: 50px;
+    margin-left: 18%;
+    display: flex;
+    gap: 40px;
+}
+.fa-brands{
+    color: #ababab;
+    font-size:20px;
+}
+.sidefooter-container p{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+/*-------------------media queries-----------------------*/
+
+@media screen and (max-width:600px){
+    #toggle-container{
+        display: block;
+    }
+    .nav a{ 
+        display: none;
+    }
+    .skills-part{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-left:15%;
+    }
+    .logo-container{
+        flex-direction: column;
+        margin-left:23%;
+    }
+    .contact-row{
+        flex-direction: column;
+        margin-left: 10%;
+    }
+}
