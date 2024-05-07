@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio websites</title>
+    <!------------------------------------------------Google Fonts----------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+    <!------------------------------------------------------------Header part--------------------------->
+    <div id="header">
+        <div class="nav-container">
+        <nav class="flex-container">
+            <h3><span style="color: #ff004f ;font-family: 'poppins',sans-serif;">V</span>arun Shankar</h3>
+            <ul class="nav">
+                <li><a href="#headerr">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div>
+                <i class="fa-solid fa-bars" onclick="shownavbar()" id="toggle-container"></i>
+            </div>   
+        </nav>
+        <div class="header-text">
+           <div>
+            <p>Hello Its me</p>
+           <h2><span style="color: #ff004f;">Varun Shankar</span><br></h2>
+           <p>and I'm <span ><h2>Frontend Developer</h2></span></p>
+           <br>
+           <p>im a web designer with extensive knowledge about <br> HTML,CSS,JAVASCRIPT.
+            Exxpetise to create and web design...</p>
+           </div>
+        </div>
+        <div class="headersocial-icons">       
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="headerbutton-container">
+            <button><a href="">More About Me</a></button>
+        </div>
+        </div>
+    </div>
+    <!-------------------------------------------------Side navbar----------------------->
+    <div class="sidenav-container">
+        <div class="sidecontent-container">
+            <p><i class="fa-solid fa-xmark" style="position: absolute; right:10px;" onclick="closenavbar()"></i></p>
+            <ul class="sidanav">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <div class="sidesocail-icons">
+                <a href=""><i class="fa-brands fa-facebook" ></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="sidefooter-container">
+                <p>Founder is <span style="color: #ff004f;">Varun Shankar</span></p>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------  about me--------------------------------------------------->
+    <div id="About">        
+        <div class="about-container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="../images/fire-4605810_1280.jpg" alt="" style="width: 300px;">
+                </div>
+                <div class="col-2">
+                     <h1 class="subtitle">About Me</h1>
+                     <br>
+                    <p>Looking forward to work on frontend Developer..i have design sample E-commerce projecgts usimg <span style="color: #ff004f;">HTML,CSS,JAVACSIPT</span></p>
+                    <br>
+                    <a href="">-E-Commerce</a>
+                     <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="showtab('skills')">Skill</p>
+                        <p class="tab-links" onclick="showtab('personal-project')">personal-project</p>
+                        <p class="tab-links" onclick="showtab('Education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Technologies</span><br>Designing the Webpage</li>
+                            <li><span>python</span><br>Problem Solving</li>
+                            <li><span>Sql</span><br>basics on Queries</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="personal-project">
+                        <ul>
+                            <li><span>E-commerce</span><br>using by HTML,CSS,JAVASCRIPT</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-08</span><br>PYTHON FULLSTACK AT Q'SPIDERS</li>
+                            <li><span>2019-2023</span><br>Rrase College Of Engineerinig</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-----------------------------SKILLLS CONTAINER------------------------->
+    <div class="skills-container" id="skills">
+        <div id="content-container">
+            <h1 class="skill-move">SKILLS</h1>
+        <div  class="skills-part">
+            <div id="skillcontent-container">
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <br>
+                <br>
+                <h2>Web Technologies</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, suscipit.</p>
+                <br>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-python fa-3x"></i>
+                <br>
+                <br>
+                <h2>PYTHON</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, ipsam.</p>
+                <br>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database fa-3px"></i>
+                <br>
+                <br>
+                <h2>SQL</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quam!</p>
+                <br>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+        </div>
+        <div class="skill-flex-part">
+            <div class="logo-container">
+                <div class="html-container">
+                    <i class="fa-brands fa-html5 fa-10x" ;></i>
+                    <div class="star-container">
+                        <i class="fa-solid fa-star " ></i >
+                            <i class="fa-solid fa-star "></i >
+                                <i class="fa-solid fa-star "></i >
+                                    <i class="fa-solid fa-star "></i >
+                                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python fa-10x"></i>
+                    <div class="star-container">
+                        <i class="fa-solid fa-star "></i >
+                            <i class="fa-solid fa-star"></i >
+                                <i class="fa-solid fa-star "></i >
+                                    <i class="fa-solid fa-star-half-stroke "></i>
+                                    <i class="fa-regular fa-star "></i>
+                    </div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database fa-10x"></i>
+                    <div class="star-container" style="text-align: center;">
+                        <i class="fa-solid fa-star "></i >
+                            <i class="fa-solid fa-star"></i >
+                                <i class="fa-regular fa-star "></i>
+                                <i class="fa-regular fa-star "></i>
+                                <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button>See More</button>
+            </div>
+            <!-- <ul id="flex-img">
+                <div class="html-container" style="text-align: center;">
+                    <li><img src="../images/html5-3372584_1280.png" alt=""></li>
+                    <div class="star-container">
+                        <i class="fa-solid fa-star fa-2x" ></i >
+                            <i class="fa-solid fa-star fa-2x"></i >
+                                <i class="fa-solid fa-star fa-2x"></i >
+                                    <i class="fa-solid fa-star fa-2x"></i >
+                                        <i class="fa-regular fa-star fa-2x"></i>
+                    </div>
+                </div>
+                <div class="pytho-container" style="text-align: center;">
+                    <li><img src="../images/pythonlogo.jpg" alt=""></li>
+                    <div class="star-container">
+                        <i class="fa-solid fa-star fa-2x"></i >
+                            <i class="fa-solid fa-star fa-2x"></i >
+                                <i class="fa-solid fa-star fa-2x"></i >
+                                    <i class="fa-solid fa-star-half-stroke fa-2x"></i>
+                                    <i class="fa-regular fa-star fa-2x"></i>
+                    </div>
+                </div>
+                <div>
+                    <li><img src="../images/sql-database-icon-logo-design-ui-ux-app-red-blue-dark-inscription-shadow-96842055.webp" alt=""></li>
+                    <div class="star-container" style="text-align: center;">
+                        <i class="fa-solid fa-star fa-2x"></i >
+                            <i class="fa-solid fa-star fa-2x"></i >
+                                <i class="fa-regular fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                                <i class="fa-regular fa-star fa-2x"></i>
+                    </div>
+                </div>
+            </ul>
+        </div> -->
+    </div>
+
+    <!--------------------------------------------------CONTACT--------------------------------------->
+
+    <div class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>8925159973</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type=" " name="Email" placeholder="Your Email" required>
+                        <textarea name="Mesaage"rows="6" placeholder="Your Message" ></textarea>
+                        <button type="submit" class="btn-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright@VarunShankar. Made With by Varun Shankar</p>
+    </div>
+    <script src="../js/portfolio.js"></script>
+    <script src="https://kit.fontawesome.com/78e0b62495.js" crossorigin="anonymous"></script>
+</body>
+</html> 
